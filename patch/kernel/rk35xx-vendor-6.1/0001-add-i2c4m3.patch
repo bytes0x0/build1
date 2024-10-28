@@ -1,0 +1,34 @@
+&i2c4{
+status = "okay";
+pinctrl-names = "default";
+pinctrl-0 = <&i2c4m3_xfer>;
+};
+
+ &iep {
+ 	status = "okay";
+ };
+  &uart4 {
+ 	pinctrl-0 = <&uart4m1_xfer &uart4m1_ctsn>;
+ };
+ 
+&uart6 {
+status = "okay";
+pinctrl-names = "default";
+pinctrl-0 = <&uart6m3_xfer &uart6m3_ctsn>;
+};
+
+&uart0 {
+status = "okay";
+pinctrl-names = "default";
+pinctrl-0 = <&uart0m0_xfer &uart0m0_ctsn>;
+};
+
+&uart7 {
+status = "okay";
+pinctrl-names = "default";
+pinctrl-0 = <&uart7m0_xfer &uart7m0_ctsn>;
+};
+
+ &ufs {
+ 	reset-gpios = <&gpio4 RK_PD0 GPIO_ACTIVE_HIGH>;
+ 	status = "okay";
